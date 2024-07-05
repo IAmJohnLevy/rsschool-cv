@@ -1,3 +1,3 @@
 rsschool-cv
 
-https://iamjohnlevy.github.io/rsschool-cv/cv
+https://iamjohnlevy.github.io/rsschool-cv/

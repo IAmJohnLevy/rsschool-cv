@@ -1,10 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cv</title>
+  <link rel="stylesheet" href="style.css" /> 
+  <link rel="icon" href="assets/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+  <header class="header">
+    <div class="container">
+      <div id="menu">
+        <ul class="nav-list">
+          <li class="nav-link"><a class=":hover" href="#contacts">Contacts</a></li>
+          <li class="nav-link"><a class=":hover" href="#summary">Summary</a></li>
+          <li class="nav-link"><a class=":hover" href="#skills">Skills</a></li>
+          <li class="nav-link"><a class=":hover" href="#code">Code</a></li>
+          <li class="nav-link"><a class=":hover" href="#projects">Projects</a></li>
+          <li class="nav-link"><a class=":hover" href="#education">Education</a></li>
+          <li class="nav-link"><a class=":hover" href="#english">English</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container main-container">
+      <div class="about container-item">
+        <img src="assets/img/johnlevy.png" alt="avatar">
+        <div class="about-text">
+          <h1 class="section-profile-title">Aleksei Baliura</h1>
+          <h3 class="who-there">JUNIOR FRONT-END DEVELOPER</h3>
+          <div class="contacts" id="contacts">
+            <h2>Contacts</h2>
+            <ul>
+              <li>Minsk, Belarus</li>
+              <li>Telegram: @John_Levy</li>
+              <li>Email: lev.balura@gmail.com</li>
+              <li>Github: IAmJohnLevy</li>
+              <li>Discord: John_Levy#7413</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="main-column">
+        <div class="summary container-item" id="summary">
+          <h2>Summary</h2>
+          <p>My goal is to get the position of junior developer,
+            since writing code is cool, it brings me happiness.
+            Ready to learn new technologies. I<span>’</span>m a fast learner.</p>
+        </div>
+
+        <div class="skills container-item" id="skills">
+          <h2>Skills</h2>
+          <ul>
+            <li>markdown</li>
+            <li>Pascal</li>
+            <li>visual basic</li>
+            <li>HTML5, CSS3, JavaScript</li>
+            <li>Version control: GIT, Github</li>
+          </ul>
+        </div>
+
+        <div class="code container-item" id="code">
+          <h2>Code</h2>
+          <pre><code>function factorial(n) {
+  if (n === 0 || n === 1) {
+    return 1;
+  } else {
+    return n * factorial(n - 1);
+  }
+}
+
+console.log(factorial(5)); // 120
+          </code></pre>
+        </div>
+
+        <div class="projects container-item" id="projects">
+          <h2>Projects</h2>
+          <p>Demonstration of Brownian motion almost done, but not yet</p>
+        </div>
+
+        <div class="education container-item" id="education">
+          <h2>Education</h2>
+          <p>2011-2016 Grodno State University named after Yanka Kupala, Faculty of Physics and Technology</p>
+        </div>
+
+        <div class="english container-item" id="english">
+          <h2>English</h2>
+          <p>B1 - B2</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer"> 
+    <div class="container footer-container">
+      <a href="https://github.com/IAmJohnLevy" class="github nav-link">IAmJohnLevy</a>
+      <a href="https://rs.school/js/" class="rss"></a>
+      <time class="date-time" datetime="2024-07-12">2024г</time>
+      <article class="RSschool">
+        <img class="logo" src="assets/img/rs-school-logo.svg" alt="rs-school-logo">
+        <a href="https://rs.school/courses/javascript-ru">RS School cours</a>
+      </article>
+      
+    </div>
+  </footer>
+
 </body>
+
 </html>

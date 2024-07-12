@@ -3,8 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>cv</title>
+    <link rel="stylesheet" href="style.css" /> <!-- ToDo: стилизировать -->
+    <link rel="icon" href="assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet"><!-- 2 строки для подключения кода из Гугла -->
 </head>
 <body>
+    <header>
+        <img src="logo.png" alt="logo"> <!-- Логотип сайта -->
+        <div id="menu">
+          <ul>
+            <li><a href="#contacts">Contacts</a></li>
+            <li><a href="#summary">Summary</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#code">Code</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#english">English</a></li>
+          </ul>
+        </div>
+    </header>  
+    <main>
+      <div>
+            <div class="about">
+                <img src="johnlevy.png" alt="avatar">
+                <h1 class="section-profile-title">Aleksei Baliura</h1>
+                <h3 class="who-there">JUNIOR FRONT-END DEVELOPER</h3>
+            </div>
+
+            <div class="contacts" id="contacts">
+              
+              Minsk, Belarus
+              Telegram: @John_Levy
+              Email: lev.balura@gmail.com
+              Github: IAmJohnLevy
+              Discord: John_Levy#7413
+            </div>
+
+            <div class="summary" id="summary">
+              <p>My goal is to get the position of junior developer, 
+                since writing code is cool, it brings me happiness. 
+                Ready to learn new technologies. I<span>’</span>m a fast learner.</p>
+            </div>
+
+            <div class="skills" id="skills"> 
+              markdown
+              Pascal
+              visual basic
+              HTML5, CSS3, JavaScript
+              Version control: GIT, Github
+            </div>
+
+            <div class="code" id="code">
+              <pre>
+                function HashStorageFunc () {
+                  var self = this;
+                  var drinks = {};
+      
+                  self.addValue = function addvalue(key, value) {
+                      drinks[key] = value;
+                  }
+      
+                  self.getValue = function getValue(key) {
+                      if (key in drinks) {
+                          return drinks[key];
+                      } else return;
+                  }
+      
+                  self.deleteValue = function deleteValue(key) {
+                      if (key in drinks) {
+                          delete drinks[key];
+                          return true;
+                      } else return false;
+                  }
+      
+                  self.getKeys = function getKeys() {
+                      return Object.keys(drinks);
+                  } 
+                }
+    
+                const drinkStorage = new HashStorageFunc();
+                
+                drinkStorage.addValue('Бурбон', { alco: false, into: 'кукуруза, водка, смешать' });
+        
+                console.log(drinkStorage.getValue("Бурбон"));
+        
+                var button1 = document.getElementById("addInfo");
+                        
+                button1.onclick = function() {
+                    var name = prompt('Наименование напитка?');
+                    var alco = confirm('Содержит ли ваш напиток алкоголь?');
+                    var into = prompt('Какой рецепт приготовления?');
+                    drinkStorage.addValue(name, {alco, into});
+                }
+        
+                var button2 = document.getElementById("getInfo");
+                        
+                button2.onclick = function() {
+                    var name = prompt('Какой напиток желаете?');
+                    var result = drinkStorage.getValue(name);
+                    var isAlco = result.alco ? 'Да' : 'Нет';
+                    alert('Алкогольность: ' + isAlco + ', рецепт: ' + result.into);
+                }
+        
+                var button3 = document.getElementById("delInfo");
+        
+                button3.onclick = function() {
+                    var name = prompt('Какой напиток желаете изничтожить?');
+                    var result = drinkStorage.deleteValue(name);
+                    alert(result);
+                }
+        
+                var button4 = document.getElementById("base");
+        
+                button4.onclick = function() {
+                    alert(drinkStorage.getKeys());
+                }
+              </pre>
+            </div>
+            
+            <div class="projects" id="projects">
+              https://wowo.by
+              Demonstration of Brownian motion
+              almost done, but not yet
+            </div>
+
+            <div class="education" id="education">
+              2011-2016 Grodno State University named after Yanka Kupala, Faculty of Physics and Technology
+            </div>
+
+            <div class="english" id="english">
+              2011-2016 Grodno State University named after Yanka Kupala, Faculty of Physics and Technology
+            </div>
+      </div>
+
+    </main> 
+
+    <footer> <!-- «Подвал с логотипом и датой -->
+      <!-- доработать по протоколу -->
+      <a href="https://github.com/IAmJohnLevy" class="github nav-link">IAmJohnLevy</a>
+      <a href="https://rs.school/js/" class="rss"></a>
+      <time datetime="2024-07-12">12 июля 2024г</time> <!-- Дата написания статьи -->
+    </footer>
+
 </body>
 </html>

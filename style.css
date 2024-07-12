@@ -1,6 +1,154 @@
 html, body {
-    2    font-family: Arial, serif;
-    3    font-size: 16px;
-    4    margin: 0;
-    5    padding: 0;
-    6}
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #af4425;
+    color: #ebdcb2;
+    font-size: 1.2em;
+}
+
+footer{
+    color: aliceblue;
+    background-color: #662E1C;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+}
+
+a {
+    font: 1em sans-serif;
+    font-style: normal;
+    color: #f5f4f2;
+    text-decoration: none;
+    font-size: inherit;
+    transition: 0.3s;
+}
+
+.about {
+    padding: 1em 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: flex-start;
+    border: #C9a66b dotted 1px;
+}
+
+.about-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.contacts {
+    text-align: center;
+}
+
+.container {
+    padding: 0 25vw;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+.about img {
+    margin-left: 1em;
+    width: 250px;
+    height: 250px;
+}
+
+.main-column {
+    display: flex;
+    row-gap: 10px;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    padding: 1em;
+    border: #C9a66b dotted 1px;
+
+}
+
+.contacts h2 {
+    display: none;
+}
+
+.container-item {
+    min-width: 50%;
+}
+
+main {
+    flex-grow: 1;
+    background-color: #ebdcb2;
+}
+
+.code{
+    /* font-family: Arial;
+    font-style: normal;
+    font-size: 1em;
+    font-weight: normal; */
+    max-width: 45%;
+}
+
+.section-item a {
+    color: #829985;
+    text-decoration: none;
+    transition: color 0.5s;
+  }
+  .section-item a:hover {
+    color: #4d2323;
+  }
+
+  .RSschool {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+  }
+
+  .logo{
+    width: 100px;
+    height: 50px;
+    padding-right: 15px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .date-time{
+    padding-top: 15px;
+    flex: auto;
+  }
